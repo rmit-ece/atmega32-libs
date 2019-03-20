@@ -1,5 +1,5 @@
 CC		:= avr-gcc
-CFLAGS		:= -Wall -Wextra -pedantic -Os -mmcu=atmega32
+CFLAGS		:= -Wall -Wextra -pedantic -Os -mmcu=atmega32 -nostartfiles -nostdlib
 SOURCES		:= $(wildcard *.c)
 OBJS 		:= $(patsubst %.c, %.o, $(wildcard *.c))
 TARGET		:= prog.bin
